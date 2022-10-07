@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+body {
+  background-image: url(/assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+}
+
+/* ----------
+    Header
+------------- */
+.logo {
+  width: 150px;
+  height: 50px;
+  padding: 30px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  border-bottom: 3px solid #fff;
+  padding: 30px;
+}
+
+.nav-item {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.call-item {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  top: -10px;
+  font-size: 15px;
+}
+
+.call-item img {
+  width: 25px;
+  color: #fff;
+  filter: invert();
+}
+
+.interior {
+  display: flex;
+  flex-direction: row;
+}
+
+.interior-left {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.interior-left h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.btn {
+  width: 220px;
+  padding: 15px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 2rem;
+}
+
+.interior-right {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.img-out {
+  background-color: #fff;
+  width: 75px;
+  border-radius: 1.5em;
+  text-align: center;
+}
+
+.img-icon {
+  width: 30px;
+}
+
+.card {
+  padding: 25px;
+  width: 55%;
+  background-color: rgba(255, 255, 255, 0.258);
+  position: relative;
+}
+
+.card-1 {
+  top: 50px;
+  left: 230px;
+}
+
+.card-2 {
+  right: 50px;
+  bottom: 10px;
+}
+
+.line {
+  width: 5em;
+  background-color: #ffffff;
+  position: absolute;
+}
+.line-1 {
+  left: -12em;
+  top: 0.35em;
+  transform: rotate(90deg);
+}
+.line-2 {
+  top: 9em;
+  left: -24.35em;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.circle-1 {
+  left: -9.97em;
+  top: 3em;
+}
+.circle-2 {
+  left: -20em;
+  top: 9.1em;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-items {
+    display: none;
+  }
+  body {
+    height: 100vh;
+    background-position: initial;
+  }
+
+  .logo {
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+  }
+
+  .interior {
+    flex-direction: column;
+  }
+
+  .interior-left h1 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .btn {
+    width: 120px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2rem;
+  }
+
+  .interior-right {
+    gap: 80px;
+  }
+
+  .card {
+    padding: 15px;
+    width: 40%;
+  }
+
+  .card-1 {
+    top: -50px;
+    left: 230px;
+  }
+  
+  .card-2 {
+    right: -30px;
+    bottom: 200px;
+  }
+}
