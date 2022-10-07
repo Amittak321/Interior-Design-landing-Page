@@ -111,7 +111,7 @@ body {
 
 .card-2 {
   right: 50px;
-  bottom: 10px;
+  /* bottom: 10px; */
 }
 
 .line {
@@ -163,6 +163,10 @@ body {
   .interior {
     flex-direction: column;
   }
+  .interior-left {
+    /* width: 50%; */
+    padding-left: 10px;
+  }
 
   .interior-left h1 {
     font-size: 25px;
@@ -189,12 +193,12 @@ body {
   }
 
   .card-1 {
-    top: -50px;
+    top: -20px;
     left: 230px;
   }
   
   .card-2 {
     right: -30px;
-    bottom: 200px;
+    bottom: 100px;
   }
 }
